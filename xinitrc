@@ -2,7 +2,7 @@
 
 xrdb -merge ~/.Xresources
 
-# set keyboard repeat rate
+setxkbmap dvorak
 xset r rate 180 40
 
 xrandr --output HDMI-0 --auto --primary --output DVI-D-0 --auto --left-of HDMI-0
