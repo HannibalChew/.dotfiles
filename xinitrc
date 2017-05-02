@@ -1,20 +1,12 @@
-xrdb ~/.Xresources
+#!/bin/sh
 
-# set keyboard repeat rate
-xset r rate 200 30
+xrdb -merge "$HOME/.Xresources"
 
-xrandr --output HDMI-0 --auto --primary --output DVI-D-0 --auto --left-of HDMI-0
+xset r rate 180 40
 
-# enable natural scrolling.
-xinput set-button-map 9 1 2 3 5 4 6 7 8 9 10 11 12 13 14 15 16
+setxkbmap dvorak
 
-# Set wallpaper
-hsetroot -fill ~/Pictures/Wallpapers/japan.png
+feh --bg-fill ~/Pictures/Wallpapers/japan.png
 
-# load WM
-sxhkd -m -1 &
-dropbox-cli start &
+sxhkd &
 exec bspwm
-
-# Fix fucking shitty nvidia screen tearing issues. You cunts.
-# nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }"

@@ -1,0 +1,83 @@
+;=====================================================
+;
+;
+;
+;
+;
+;
+;=====================================================
+
+[colors]
+mainBlue = #262f33
+mainLightBlue = #96B5B4
+mainSelectBlue = #44545b
+
+[bar/bar]
+wm-name = bar
+bottom = true
+override-redirect = true
+wm-restack = bspwm
+height = 18
+underline-size = 2
+background = ${colors.mainBlue}
+foreground = #a0b6b3
+underline = #96B5B4
+locale = en_US.UTF-8
+module-margin-left = 1
+fixed-center = true
+
+font-0 = "xft:Hack:antialias=false:pixelsize=8.5;0"
+font-1 = "FontAwesome:size=8.5;0"
+
+border-top-size = 2
+border-top-color = ${colors.mainLightBlue}
+
+modules-center = bspwm music cpu memory clock
+
+[module/bspwm]
+type = internal/bspwm
+format-background = ${colors.mainBlue}
+format-underline = ${colors.mainLightBlue}
+label-focused = %index%
+label-occupied = %index%
+label-urgent = %index%
+label-empty = %index%
+label-focused-padding = 1
+label-occupied-padding = 1
+label-urgent-padding = 1
+label-empty-padding = 1
+label-focused-background = ${colors.mainSelectBlue}
+enable-scroll = false
+
+[module/music]
+type = custom/script
+interval = 2
+format-background = ${colors.mainBlue}
+format-underline = ${colors.mainLightBlue}
+format-padding = 2
+
+label =  %output:0:45:...%
+exec = ~/.config/polybar/mpris.sh
+
+[module/cpu]
+type = internal/cpu
+interval = 0.5
+format-background = ${colors.mainBlue}
+format-underline = ${colors.mainLightBlue}
+format-padding = 2
+label = CPU: %percentage%%
+
+[module/memory]
+type = internal/memory
+interval = 3
+format-background = ${colors.mainBlue}
+format-underline = ${colors.mainLightBlue}
+format-padding = 2
+label = "MEM: %gb_used%"
+
+[module/clock]
+type = internal/date
+date = %d-%m-%Y %H:%M
+format-background = ${colors.mainBlue}
+format-underline = ${colors.mainLightBlue}
+format-padding = 2

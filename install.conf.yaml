@@ -1,25 +1,27 @@
-- clean: ['~']
+- defaults:
+    link:
+        create: true
+        relink: true
+
+- clean:
+    ['~', '~/.config']
+
+- shell:
+    - mkdir -p  ~/.config
 
 - link:
-    ~/.gitconfig:
-        path: gitconfig
-        create: false
-        relink: false
-        force: false
-    ~/.vimrc:
-        path: vimrc
-        create: false
-        relink: false
-        force: false
-    ~/.Xresources:
-        path: Xresources
-        create: false
-        relink: false
-        force: false
-    ~/.xinitrc:
-        path: xinitrc
-        create: false
-        relink: false
-        force: false
+    ~/.dotfiles:                        ''
+    ~/.Xresources:                      Xresources
+    ~/.xinitrc:                         xinitrc
+    ~/.config/termcolours/birdseye:     config/termcolours/birdseye
+    ~/.config/bspwm/bspwmrc:            config/bspwm/bspwmrc
+    ~/.config/bspwm/panel:              config/bspwm/panel
+    ~/.config/bspwm/panel_bar:          config/bspwm/panel_bar
+    ~/.config/bspwm/panel_colors:       config/bspwm/panel_colors
+    ~/.config/sxhkd/sxhkdrc:            config/sxhkd/sxhkdrc
+    ~/.config/polybar/config:           config/polybar/config
+    ~/.config/polybar/launch.sh:        config/polybar/launch.sh
+    ~/.config/polybar/mpris.sh:         config/polybar/mpris.sh
 
-
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
