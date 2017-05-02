@@ -22,6 +22,7 @@
     ~/.config/polybar/config:           config/polybar/config
     ~/.config/polybar/launch.sh:        config/polybar/launch.sh
     ~/.config/polybar/mpris.sh:         config/polybar/mpris.sh
+    ~/Pictures/Wallpapers:              Pictures/Wallpapers
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
