@@ -23,7 +23,7 @@ super + alt + shift + l
     lock
 
 super + alt + shift + s
-    imgur-screenshot
+    imgur-screenshoti --auto-delete 30
 
 # quit bspwm normally
 super + alt + Escape
