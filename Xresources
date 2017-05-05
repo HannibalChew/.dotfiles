@@ -40,8 +40,8 @@ URxvt.perl-ext-common:          default,clipboard
 URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
 URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
 !FONT
-URxvt*font:                     xft:Hack:pixelsize=11
-URxvt.boldFont:                 xft:Hack:bold:pixelsize=11
+URxvt*font:                     xft:Hack:pixelsize=12
+URxvt.boldFont:                 xft:Hack:bold:pixelsize=12
 URxvt.depth:                    34
 URxvt*lineSpace:                1
 URxvt.letterSpace:              0.5
