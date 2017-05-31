@@ -1,32 +1,43 @@
 
-  __   __                                            
-  \ \ / /                                            
-   \ V / _ __ ___  ___  ___  _   _ _ __ ___ ___  ___ 
-    > < | '__/ _ \/ __|/ _ \| | | | '__/ __/ _ \/ __|
- _ / . \| | |  __/\__ \ (_) | |_| | | | (_|  __/\__ \
-(_)_/ \_\_|  \___||___/\___/ \__,_|_|  \___\___||___/
-                                                     
 #include </home/cas/.config/termcolours/birdseye>
 
-*background:   bg
-*foreground:   fg
+! special
+*.foreground:   #c0c5ce
+*.background:   #2b303b
+*.cursorColor:  #c0c5ce
 
-*color0:      blk
-*color8:      bblk
-*color1:      red
-*color9:      bred
-*color2:      grn
-*color10:     bgrn
-*color3:      ylw
-*color11:     bylw
-*color4:      blu
-*color12:     bblu
-*color5:      mag
-*color13:     bmag
-*color6:      cyn
-*color14:     bcyn
-*color7:      wht
-*color15:     bwht
+! black
+*.color0:       #2b303b
+*.color8:       #65737e
+
+! red
+*.color1:       #bf616a
+*.color9:       #bf616a
+
+! green
+*.color2:       #a3be8c
+*.color10:      #a3be8c
+
+! yellow
+*.color3:       #ebcb8b
+*.color11:      #ebcb8b
+
+! blue
+*.color4:       #8fa1b3
+*.color12:      #8fa1b3
+
+! magenta
+*.color5:       #b48ead
+*.color13:      #b48ead
+
+! cyan
+*.color6:       #96b5b4
+*.color14:      #96b5b4
+
+! white
+*.color7:       #c0c5ce
+*.color15:      #eff1f5
+
 
 !URXVT
 URxvt.scrollBar:	              false
@@ -74,4 +85,3 @@ Xft.rgba:                       rgb
 Xcursor.theme: Neutral
 
 ! vim: set ft=xdefaults :
-

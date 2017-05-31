@@ -21,16 +21,20 @@ bspc config gapless_monocle         true
 bspc config focus_by_distance       true
 bspc config history_aware_focus     true
 
+bpsc config ignore_ewmh_focus	    true
+
 bspc monitor HDMI-0 -d 1 2 3 4 5 6 7 8 9
 # I II III IV V VI VII VIII
 #bspc monitor DVI-I-1 -s HDMI-0
 
 # rules
-bspc rule -a Firefox desktop=^1
-bspc rule -a Spotify desktop=^2
-bspc rule -a Deluge-gtk desktop=^3
+bspc rule -a chrome follow=false desktop=^1
+bspc rule -a spotify follow=false desktop=^2
+bspc rule -a deluge follow=false desktop=^3
+bspc rule -a discord follow=false desktop=^4
 
 # launch progams
-#firefox &
-#spotify &
-#deluge-gtk
+exec google-chrome-stable &
+exec spotify &
+exec deluge &
+exec discord
