@@ -84,9 +84,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias startpiaUK="systemctl start pia@UK_London"
-alias startpiaNY="systemctl start pia@S_New_York_City"
+alias startpiaNY="systemctl start pia@US_New_York_City"
 alias stoppiaUK="systemctl stop pia@UK_London"
-alias stoppiaNY="systemctl stop pia@S_New_York_City"
+alias stoppiaNY="systemctl stop pia@US_New_York_City"
 
 alias pacman="sudo pacman"
 alias cp="cp -r"
+alias npm="sudo npm"
+alias mixer="sudo alsamixer"

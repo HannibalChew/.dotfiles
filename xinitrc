@@ -9,7 +9,7 @@ xset r rate 180 40
 # natural scrolling
 xinput set-prop 9 291 1
 
-xrandr --output HDMI-0 --auto --primary --output DVI-D-0 --auto --left-of HDMI-0
+xrandr --output HDMI-0 --mode 1920x1080 --rate 60
 
 # Set wallpaper
 feh --bg-fill ~/Pictures/Wallpapers/blackwaves.jpeg
