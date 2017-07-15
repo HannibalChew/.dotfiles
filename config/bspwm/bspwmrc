@@ -1,6 +1,7 @@
 #! /bin/sh
 
 sxhkd &
+compton &
 $HOME/.config/polybar/launch.sh &
 
 bspc config border_width            2
@@ -18,24 +19,26 @@ bspc config presel_feedback_color   '#2b3135'
 bspc config split_ratio             0.50
 bspc config borderless_monocle      true
 bspc config gapless_monocle         true
-bspc config focus_by_distance       true
-bspc config history_aware_focus     true
+# bspc config focus_by_distance       true
+# bspc config history_aware_focus     true
 
-bpsc config ignore_ewmh_focus	    true
+bspc config ignore_ewmh_focus	    true
 
-bspc monitor HDMI-0 -d 1 2 3 4 5 6 7 8 9
-# I II III IV V VI VII VIII
-#bspc monitor DVI-I-1 -s HDMI-0
+bspc monitor HDMI-0 -n right
+bspc monitor DVI-I-1 -n left
+bspc monitor right -d 1 2 3 4
+bspc monitor left -d 5 6 7 8
 
 # rules
-bspc rule -a chrome follow=false desktop=^1
-bspc rule -a spotify follow=false desktop=^2
-bspc rule -a deluge follow=false desktop=^3
-bspc rule -a atom follow=false desktop=^4
-bspc rule -a discord follow=false desktop=^5
+bspc rule -a google-chrome-stable desktop=1
+bspc rule -a spotify desktop=2
+bspc rule -a deluge desktop=3
+bspc rule -a atom state=tiled desktop=4
+bspc rule -a discord desktop=5
 
 # launch progams
 exec google-chrome-stable &
 exec spotify &
 exec deluge &
+exec atom &
 exec discord

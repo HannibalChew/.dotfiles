@@ -12,8 +12,9 @@ mainBlue = #262f33
 mainLightBlue = #96B5B4
 mainSelectBlue = #44545b
 
-[bar/bar]
-wm-name = bar
+[bar/right]
+monitor = HDMI-0
+wm-name = right
 bottom = true
 override-redirect = true
 wm-restack = bspwm
@@ -25,14 +26,31 @@ underline = #96B5B4
 locale = en_US.UTF-8
 module-margin-left = 1
 fixed-center = true
-
 font-0 = "xft:Hack:antialias=false:pixelsize=8.5;0"
 font-1 = "FontAwesome:size=8.5;0"
-
 border-top-size = 2
 border-top-color = ${colors.mainLightBlue}
+modules-center = bspwm music cpu clock
 
-modules-center = bspwm music cpu memory clock
+[bar/left]
+monitor = DVI-I-1
+wm-name = left
+bottom = true
+override-redirect = true
+wm-restack = bspwm
+height = 18
+underline-size = 2
+background = ${colors.mainBlue}
+foreground = #a0b6b3
+underline = #96B5B4
+locale = en_US.UTF-8
+module-margin-left = 1
+fixed-center = true
+font-0 = "xft:Hack:antialias=false:pixelsize=8.5;0"
+font-1 = "FontAwesome:size=8.5;0"
+border-top-size = 2
+border-top-color = ${colors.mainLightBlue}
+modules-center = bspwm music cpu clock
 
 [module/bspwm]
 type = internal/bspwm
@@ -77,7 +95,7 @@ label = "MEM: %gb_used%"
 
 [module/clock]
 type = internal/date
-date = %d-%m-%Y %H:%M
+date = %d-%m-%Y %H:%M:%S
 format-background = ${colors.mainBlue}
 format-underline = ${colors.mainLightBlue}
 format-padding = 2
