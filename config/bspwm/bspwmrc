@@ -24,6 +24,11 @@ bspc config gapless_monocle         true
 
 bspc config ignore_ewmh_focus	    true
 
+bspc config pointer_modifier lock
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_side
+bspc config pointer_action1 resize_corner
+
 bspc monitor HDMI-0 -n right
 bspc monitor DVI-I-1 -n left
 bspc monitor right -d 1 2 3 4
