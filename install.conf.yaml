@@ -25,6 +25,6 @@
     ~/Pictures/Wallpapers:              Pictures/Wallpapers
     ~/.zshrc:                           zshrc
     ~/.oh-my-zsh:                       oh-my-zsh
-
+    ~/.config/compton.conf:             compton.conf
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

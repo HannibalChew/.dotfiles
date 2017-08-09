@@ -23,7 +23,7 @@ super + alt + shift + l
     lock
 
 super + alt + shift + s
-    imgur-screenshot
+    img -s
 
 # quit bspwm normally
 super + alt + Escape
