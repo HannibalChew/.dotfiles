@@ -12,12 +12,26 @@ mainBlue = #262f33
 mainLightBlue = #96B5B4
 mainSelectBlue = #44545b
 
-[bar/bar]
-monitor = ${env:MONITOR}
-wm-name = right
+[bar/left]
+monitor = HDMI-0
 bottom = true
-override-redirect = true
-wm-restack = bspwm
+height = 18
+underline-size = 2
+background = ${colors.mainBlue}
+foreground = #a0b6b3
+underline = #96B5B4
+locale = en_US.UTF-8
+module-margin-left = 1
+fixed-center = true
+font-0 = "xft:Hack:antialias=false:pixelsize=8.5;0"
+font-1 = "FontAwesome:size=8.5;0"
+border-top-size = 2
+border-top-color = ${colors.mainLightBlue}
+modules-center = bspwm music cpu clock
+
+[bar/right]
+monitor = DP-1
+bottom = true
 height = 18
 underline-size = 2
 background = ${colors.mainBlue}
@@ -46,6 +60,7 @@ label-urgent-padding = 1
 label-empty-padding = 1
 label-focused-background = ${colors.mainSelectBlue}
 enable-scroll = false
+wm-restack = bspwm
 
 [module/music]
 type = custom/script

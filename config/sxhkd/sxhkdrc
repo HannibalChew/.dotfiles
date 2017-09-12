@@ -19,11 +19,14 @@ super + Escape
 #
 
 # LOCK SCRIPT
-super + alt + shift + l
+super + shift + l
     lock
 
-super + alt + shift + s
-    img -s
+super + shift + s
+    maim -s | xclip -selection clipboard -t image/png
+
+super + shift + n
+		maim -s /tmp/screenshot.png; imgur /tmp/screenshot.png
 
 # quit bspwm normally
 super + alt + Escape

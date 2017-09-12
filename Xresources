@@ -26,21 +26,22 @@
 *.color7:       #bacfdc
 *.color15:      #dcdcdc
 
-!URXVT
-URxvt.scrollBar:	              false
-URxvt.visualBell:	              true
-URxvt.cursorUnderline:          true
-URxvt.cursorBlink:              true
-URxvt.internalBorder:           30
-URxvt.perl-ext-common:          default,clipboard
-URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
-URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
+!urxvt
+urxvt.saveLines: 1000000
+urxvt.scrollBar:	              false
+urxvt.visualBell:	              true
+urxvt.cursorUnderline:          true
+urxvt.cursorBlink:              true
+urxvt.internalBorder:           30
+urxvt.perl-ext-common:          default,clipboard
+urxvt.keysym.Shift-Control-C:   perl:clipboard:copy
+urxvt.keysym.Shift-Control-V:   perl:clipboard:paste
 !FONT
-URxvt*font:                     xft:Hack:pixelsize=12
-URxvt.boldFont:                 xft:Hack:bold:pixelsize=12
-URxvt.depth:                    34
-URxvt*lineSpace:                1
-URxvt.letterSpace:              0.5
+urxvt*font:                     xft:Hack:pixelsize=12
+urxvt.boldFont:                 xft:Hack:bold:pixelsize=12
+urxvt.depth:                    34
+urxvt*lineSpace:                1
+urxvt.letterSpace:              0.5
 
 !rofi
 rofi.modi: run
@@ -60,7 +61,7 @@ rofi.padding: 50
 rofi.fuzzy: false
 
 !Font settings
-Xft.dpi:                        100
+Xft.dpi:                        90
 Xft.antialias:                  1
 Xft.autohint:                   1
 Xft.hinting:                    1
