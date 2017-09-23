@@ -7,7 +7,7 @@ setxkbmap dvorak
 xset r rate 180 40
 
 # natural scrolling
-xinput set-prop 8 291 1
+xinput set-prop 8 286 1
 
 xrandr --output HDMI-0 --mode 1920x1080 --rate 60 --primary
 xrandr --output DP-1 --mode 1920x1080 --rate 60 --left-of HDMI-0
