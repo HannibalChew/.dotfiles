@@ -13,7 +13,6 @@
     ~/.dotfiles:                        ''
     ~/.Xresources:                      Xresources
     ~/.xinitrc:                         xinitrc
-    ~/.config/termcolours/birdseye:     config/termcolours/birdseye
     ~/.config/bspwm/bspwmrc:            config/bspwm/bspwmrc
     ~/.config/bspwm/panel:              config/bspwm/panel
     ~/.config/bspwm/panel_bar:          config/bspwm/panel_bar
@@ -22,6 +21,9 @@
     ~/.config/polybar/config:           config/polybar/config
     ~/.config/polybar/launch.sh:        config/polybar/launch.sh
     ~/.config/polybar/mpris.sh:         config/polybar/mpris.sh
+    ~/.config/i3/config:                config/i3/config
+    ~/.config/i3/i3blocks.conf:         config/i3/i3blocks.conf
+    ~/.config/i3/i3status.conf:         config/i3/i3status.conf
     ~/Pictures/Wallpapers:              Pictures/Wallpapers
     ~/.zshrc:                           zshrc
     ~/.oh-my-zsh:                       oh-my-zsh

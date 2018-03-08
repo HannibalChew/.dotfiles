@@ -30,12 +30,12 @@ bspc config pointer_action2 none
 bspc config pointer_action3 resize_corner
 bspc config click_to_focus true
 
-bspc monitor HDMI-0 -n right
-bspc monitor DP-1 -n left
-# bspc monitor DVI-I-1 -n farLeft
+bspc monitor HDMI-1 -n right
+bspc monitor DP-2 -n left
+bspc monitor HDMI-2 -n farRight
 bspc monitor right -d 1 2 3 4
 bspc monitor left -d 5 6 7 8
-# bspc monitor farLeft -d 9
+bspc monitor farRight -d 9
 
 # rules
 bspc rule -a Google-chrome desktop=1
@@ -48,4 +48,4 @@ exec google-chrome-stable &
 exec spotify &
 exec deluge &
 exec atom &
-exec discord
+exec discord-canary

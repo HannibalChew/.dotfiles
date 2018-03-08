@@ -1,38 +1,51 @@
-*.foreground:   #dcdcdc
-*.background:   #2f3243
-*.cursorColor:  #dcdcdc
+URxvt.font: xft:sourcecodepro:size=10
+URxvt.scrollBar: false
+URxvt.termName: xterm-256color
+
+! special
+*.foreground:   #c0c5ce
+*.background:   #2b303b
+*.cursorColor:  #c0c5ce
+
 ! black
-*.color0:       #292b3a
-*.color8:       #9a9adb
+*.color0:       #2b303b
+*.color8:       #65737e
+
 ! red
-*.color1:       #f58484
-*.color9:       #f58484
+*.color1:       #bf616a
+*.color9:       #bf616a
+
 ! green
-*.color2:       #aff9c6
-*.color10:      #aff9c6
+*.color2:       #a3be8c
+*.color10:      #a3be8c
+
 ! yellow
-*.color3:       #f3f4ab
-*.color11:      #f3f4ab
+*.color3:       #ebcb8b
+*.color11:      #ebcb8b
+
 ! blue
-*.color4:       #a3d6f7
-*.color12:      #a3d6f7
+*.color4:       #8fa1b3
+*.color12:      #8fa1b3
+
 ! magenta
-*.color5:       #f69dbf
-*.color13:      #f69dbf
+*.color5:       #b48ead
+*.color13:      #b48ead
+
 ! cyan
-*.color6:       #aff9f5
-*.color14:      #aff9f5
+*.color6:       #96b5b4
+*.color14:      #96b5b4
+
 ! white
-*.color7:       #bacfdc
-*.color15:      #dcdcdc
+*.color7:       #c0c5ce
+*.color15:      #eff1f5
 
 !urxvt
-urxvt.saveLines: 1000000
+urxvt.saveLines:                10000
 urxvt.scrollBar:	              false
 urxvt.visualBell:	              true
 urxvt.cursorUnderline:          true
 urxvt.cursorBlink:              true
-urxvt.internalBorder:           30
+urxvt.internalBorder:           20
 urxvt.perl-ext-common:          default,clipboard
 urxvt.keysym.Shift-Control-C:   perl:clipboard:copy
 urxvt.keysym.Shift-Control-V:   perl:clipboard:paste
