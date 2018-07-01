@@ -32,7 +32,7 @@ border-top-color = ${colors.mainLightBlue}
 modules-center = bspwm music cpu date
 
 [bar/right]
-monitor = DP-2
+monitor = DP-1
 bottom = true
 height = 18
 underline-size = 2
